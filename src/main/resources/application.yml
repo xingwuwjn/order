@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.0.107/boot?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.0.107
+    port: 6379
+server:
+ context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d -%msg%n"
+#  path: E:/spring-boot-log
+#  file: E:/spring-boot-log/spring-boot.log
+#  level:
+#    com.order.LoggerTest: debug
+wechat:
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 64c225fd312ad34e691124050a7c87c5
+  openAppId:
+  openSecret:
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  keyPath:  /var/weixin_cert/h5.p12
+  notifyUrl: http://xiazhong.natapp1.cc/sell/pay/notify
+projectUrl:
+  wechatMpAuthorize:
+  wechatOpenAutorize:
+  sell: http://localhost:8080/sell/
+  imageUrl: http://localhost:8080/sell/image/
+image:
+  module: deal
+  moduleKey: D
+  dealSourceBasePath: /src/main/resources/static/image/
+
+
+
+
